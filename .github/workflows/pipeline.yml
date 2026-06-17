@@ -21,3 +21,6 @@ jobs:
 
       - name: Simulate test
         run: echo "Running tests..."
+
+      - name: Fail step
+  	run: exit 1
