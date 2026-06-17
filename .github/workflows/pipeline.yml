@@ -6,12 +6,18 @@ on:
       - main
 
 jobs:
-  build:
+  build-test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Print message
-        run: echo "CI is running successfully"
+      - name: Show files
+        run: ls -la
+
+      - name: Simulate build
+        run: echo "Building app..."
+
+      - name: Simulate test
+        run: echo "Running tests..."
